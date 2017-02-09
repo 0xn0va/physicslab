@@ -1,9 +1,9 @@
 \contentsline {section}{\numberline {1}Theory}{3}
-\contentsline {section}{\numberline {2}Equipments}{4}
+\contentsline {section}{\numberline {2}Equipments}{3}
 \contentsline {section}{\numberline {3}Measurments and Calculations}{4}
 \contentsline {subsection}{\numberline {3.1}Density of rectangular parallelogram}{4}
-\contentsline {subsection}{\numberline {3.2}Density of cylinder}{4}
-\contentsline {subsection}{\numberline {3.3}Density of unknown liquid}{4}
-\contentsline {section}{\numberline {4}Error Estimation}{4}
-\contentsline {section}{\numberline {5}Conclusion}{4}
-\contentsline {section}{\numberline {6}Bibliography}{5}
+\contentsline {subsection}{\numberline {3.2}Density of cylinder}{5}
+\contentsline {subsection}{\numberline {3.3}Density of unknown liquid}{5}
+\contentsline {section}{\numberline {4}Error estimation}{5}
+\contentsline {section}{\numberline {5}Conclusion}{5}
+\contentsline {section}{References}{5}
