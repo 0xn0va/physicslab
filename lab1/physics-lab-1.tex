@@ -17,7 +17,7 @@
 \documentclass[a4paper, 12pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[a4paper, top=1in, bottom=1.5in, left=1in, right=1in]{geometry}
+\usepackage[a4paper, top=1.6in, bottom=1.6in, left=1in, right=1in]{geometry}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -33,6 +33,8 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
 \usepackage{mathpazo}
 \linespread{1.05}
 \makeatletter
@@ -101,13 +103,13 @@ In the following pages comes the theory, calculations, formulas and the measures
 
 Density (\(\rho\)) is defined by following equation where \(m\) is mass and \(v\) is volume of the body.
 
-\[\rho = \dfrac{m}{v}\]
+\[\rho = \frac{m}{v}\]
 
 According to Archimedes' principle if the weight of the water displaced is less than the weight of the object, the object will sink, Otherwise the object will float, with the weight of the water displaced equal to the weight of the object. \cite{weber}
 As described the buoyancy is equal to weight of displaced fluid in Archimedes' principle.
 
 \[
-\rho = \frac{m_{a}}{m_{a}-m_{l}}.\rho_{l}
+\rho = \frac{m_{a}}{m_{a}-m_{w}}.\rho_{w}
 \]
 
 Where \(m_{a}\) is mass of the body that measured surrounded by air and \(m_{l}\) is mass of the body measured surrounded by liquid and \(\rho_{l}\) is density fo the liquid.
@@ -191,8 +193,32 @@ For the rectangular parallelogram we measured 3 sides of a, b and c for 10 times
 And using balance scale we got \(m_{1}\)= 43.90\(mm\) with the accuracy of \(\varDelta m\)= 0.01\(g\). and according to density formula we have:
 
 \[
-\rho = \dfrac{m}{v} = \dfrac{m}{abc} = \dfrac{43.90g}{20_{mm}.20_{mm}.14.42_{mm}} = \dfrac{43.90g}{5768_{mm^{3}}} \approx 0.0076_{\frac{g}{m^{3}}}
+\rho = \frac{m}{v} = \frac{m}{abc} = \frac{43.90g}{20_{mm}.20_{mm}.14.42_{mm}} = \frac{43.90g}{5768_{mm^{3}}} \approx 7.611\times10^{-3}_{\frac{g}{mm^{3}}}
 \]
+
+Also we can calculate density with Archimedes’ principle for rectangular parallelogram based on our measurement for water and unknown liquid (Alcohol) that measured using aerometer:
+
+\[
+\rho = \frac{m_{a}}{m_{a}-m_{w}}.\rho_{w} = \frac{43.90g}{43.90_{g} - 38.20_{g}} \times 0.0010_{\frac{g}{mm^{3}}} \approx 7.702\times10^{-3}_{\frac{g}{mm^{3}}}
+\]
+
+
+\subsection{Density of Alcohol (unknown liquid)}
+
+We can calculate density of unknown liquid (Alcohol) with Archimedes’ principle equation and with the help of known mass of rectangular parallelogram as follow:
+
+We derive the following equation: \(\rho_{u} = \frac{m_{a}-m_{u}}{m_{a}} . \rho \), and we calculate it twice with our \(\rho\) of parallelogram form water and air. 
+
+
+\[\rho_{u_{1}} = \frac{43.90_{g} - 39.45_{g} }{43.90{g}} \times 7.611\times10^{-3}_{\frac{g}{mm^{3}}} \approx  7.715\times10^{-4}_{\frac{g}{mm^{3}}} \]
+
+\[\rho_{u_{2}} = \frac{43.90_{g} - 39.45_{g} }{43.90{g}} \times 7.702\times10^{-3}_{\frac{g}{mm^{3}}} \approx 7.807\times10^{-4}_{\frac{g}{mm^{3}}} \]
+
+
+And then we calculate the average:
+
+\[\rho_{u_{av}} = \frac{7.715\times10^{-4}_{\frac{g}{mm^{3}}} + 7.807\times10^{-4}_{\frac{g}{mm^{3}}} }{2} \approx 7.761\times10^{-4}_{\frac{g}{mm^{3}}}  \]
+
 
 \subsection{Density of cylinder}
 
@@ -226,19 +252,115 @@ We measured height and diameter with Caliper the following table shows the resul
 	\end{tabular}
 \end{center}
 
-\subsection{Density of unknown liquid}
+Now with the help of Cylinder density formula and average of the \(h\) and \(d\) we have:
 
-
+\[
+\rho = \frac{m}{v} = \frac{m}{ \frac{\pi d^{2} h}{4}} = \frac{4m}{\pi d^{2} h} = \frac{48.35_{mm}}{3.14 \times 18.01^{2} \times 24.56} \approx 1.932\times10^{-3}_{\frac{g}{mm^{3}}}
+\]
 
 %------------------------------
 \section{Error estimation}
 
+We use equipment error and average of measured values to calculate estimated error for rectangular parallelogram and cylinder.
 
+\subsection{Rectangular parallelogram }
+
+We can write the following error function based on our values:
+
+\[
+\mid\frac{\varDelta\rho}{\rho}\mid \leqslant \mid\frac{\varDelta m}{m}\mid + \mid\frac{\varDelta a}{a}\mid + \mid\frac{\varDelta b}{b}\mid + \mid\frac{\varDelta c}{c}\mid
+\]
+
+And then we have\footnote{The accuracies of the gauges are listed in the measurement document}:
+
+\[
+\mid\frac{\varDelta\rho}{\rho}\mid \leqslant \mid\frac{0.01_{g}}{43.90_{g}}\mid + \mid\frac{0.01_{mm}}{20_{mm}}\mid + \mid\frac{0.01_{mm}}{20_{mm}}\mid + \mid\frac{0.01_{mm}}{14.42_{mm}}\mid
+\]
+
+\clearpage
+
+Then: 
+
+\[
+\mid\frac{\varDelta\rho}{\rho}\mid \leqslant 1.921\times10^{-3}
+\]
+
+Now we can calculate absolute error of density:
+
+\[
+\varDelta \rho = 1.921\times10^{-3} \times 7.611\times10^{-3}_{\frac{g}{mm^{3}}} = \num{1.462e-5}_{\frac{g}{mm^{3}}}
+\]
+
+And for relative percentage of error calculates: 
+
+\[
+ 1.921\times10^{-3} \times 100\% = 0.1921\% 
+\]
+
+\subsection{Cylinder}
+
+The same process goes for Cylinder so we have:
+
+\[
+\mid\frac{\varDelta\rho}{\rho}\mid \leqslant \mid\frac{\varDelta m}{m}\mid + \mid\frac{2\varDelta d}{d}\mid + \mid\frac{\varDelta h}{h}\mid 
+\]
+
+And then we have:
+
+\[
+\mid\frac{\varDelta\rho}{\rho}\mid \leqslant \mid\frac{0.01_{g}}{48.35_{g}}\mid + \mid\frac{2 \times 0.05_{mm}}{18.01_{mm}}\mid + \mid\frac{0.05_{mm}}{24.56_{mm}}\mid 
+\]
+
+That calculates to:
+
+\[
+\mid\frac{\varDelta\rho}{\rho}\mid \leqslant 7.795\times10^{-3}
+\]
+
+And we have percentage as follow:
+
+\[
+7.795\times10^{-3} \times 100\% = 0.7795\% 
+\]
+
+So we can calculate the absolute error of density for Cylinder.
+
+\[
+\varDelta \rho = 7.795\times10^{-3} \times 1.932\times10^{-3}_{\frac{g}{mm^{3}}} = \num{1.506e-5}_{\frac{g}{mm^{3}}}
+\]
+
+\clearpage
+
+%------------------------------
+\section{Results}
+
+The results table\footnote{All the values for density and error in the table is \(\frac{g}{mm^{3}} \)} is as follow\footnote{RP: Rectangular parallelogram , AP: Archimedes’ principle \\
+This document created with LaTeX source code: https://github.com/shajadi/physicslab }:
+
+\begin{center}
+	\begin{tabular}{||c c c c||} 
+		\hline
+		&  Density & Absolute error limits  &  Relative error limits  \\ [0.5ex] 
+		\hline\hline
+		RP & \(7.611\times10^{-3}\) & \(7.611\times10^{-3} \pm  \num{1.462e-5} \)  & \(7.611\times10^{-3} \pm 0.1921\% \) \\ 
+		\hline
+		AP for RP & \(7.702\times10^{-3}\) & Not determined & Not determined \\
+		\hline
+		Cylinder & \(1.932\times10^{-3}\) & \(1.932\times10^{-3} \pm \num{1.506e-5} \) & \(1.932\times10^{-3} \pm 0.7795\% \) \\
+		\hline
+		Unknown liquid & \(7.761\times10^{-4}\) & Not determined &  Not determined \\ [1ex] 
+		\hline
+	\end{tabular}
+\end{center}
 
 %------------------------------
 \section{Conclusion}
+ 
+The last page of this report is the "Measurement Document" completed in class by group and signed all the data used in the report are from this document.
 
+After completion of  the measurements in class we calculated , the averages if a,b,c and h,d and  density of the objects also the accuracy of the equipments are given and listed in measurement document.
 
+We can conclude that from density of the objects that its Iron and the unknown liquid is Alcohol.
 
 %------------------------------
 % Bibliography
