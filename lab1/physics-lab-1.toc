@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Theory}{3}
 \contentsline {section}{\numberline {2}Equipments}{3}
-\contentsline {section}{\numberline {3}Measurments and Calculations}{4}
+\contentsline {section}{\numberline {3}Measurements and Calculations}{4}
 \contentsline {subsection}{\numberline {3.1}Density of rectangular parallelogram}{4}
 \contentsline {subsection}{\numberline {3.2}Density of Alcohol (unknown liquid)}{5}
 \contentsline {subsection}{\numberline {3.3}Density of cylinder}{6}
